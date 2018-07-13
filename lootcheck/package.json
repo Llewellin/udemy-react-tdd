@@ -1,0 +1,60 @@
+{
+    "name": "giftgiver",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "jest": {
+        "setupFiles": [
+            "<rootDir>/test-shim.js",
+            "<rootDir>/test-setup.js"
+        ],
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js"
+        ],
+        "transform": {
+            "^.+\\.(ts|tsx)$": "<rootDir>/test-preprocessor.js"
+        },
+        "testMatch": [
+            "**/__tests__/*.(ts|tsx|js)"
+        ],
+        "collectCoverageFrom": [
+            "src/**/**/*.tsx",
+            "src/**/**/*.js",
+            "!src/**/index.tsx"
+        ]
+    },
+    "dependencies": {
+        "@types/react": "^16.4.1",
+        "@types/react-dom": "^16.0.6",
+        "awesome-typescript-loader": "^5.2.0",
+        "react": "^16.4.1",
+        "react-bootstrap": "^0.32.1",
+        "react-dom": "^16.4.1",
+        "react-redux": "^5.0.7",
+        "redux": "^4.0.0",
+        "redux-thunk": "^2.3.0",
+        "sfcookies": "^1.0.2",
+        "source-map-loader": "^0.2.3",
+        "typescript": "^2.9.2",
+        "webpack": "^4.12.0"
+    },
+    "devDependencies": {
+        "@types/enzyme": "^3.1.10",
+        "@types/jest": "^23.1.1",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.1.1",
+        "fetch-mock": "^6.5.0",
+        "jest": "^23.1.0",
+        "react-test-renderer": "^16.4.1",
+        "redux-mock-store": "^1.5.3",
+        "webpack-cli": "^3.0.8"
+    }
+}
